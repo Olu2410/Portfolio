@@ -179,7 +179,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #b9073f;
+    background: #a7989d;
     transform: translate(-10px);
 }
 /* -----portfolio---- */
@@ -346,7 +346,7 @@ footer{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #575254;
         position: fixed;
         top: 0;
         right: -200px;  
