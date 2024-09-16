@@ -11,6 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    margin: 0 40px;
     font-family: poppins, sans-serif;
     background-color: #171111;
     color: white;
@@ -25,7 +26,7 @@ body{
 }
 .header-text{
     padding: 1% 8%;
-    margin-top: 120px;
+    margin-top: 170px;
     font-size: 30px;
 }
 .header-text h1{
@@ -50,7 +51,7 @@ nav{
     justify-content: space-between;
 }
 nav ul li{
-    display: inline-block;
+    display:inline-block;
     list-style-type: none;
     margin: 10px 20px;
 }
@@ -66,21 +67,16 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #c5bbbe;
+    background: #ea4444;
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -5px;
     transition: 0.3s;
 }
 nav ul li a:hover::after{
     width: 100%;
 }
-.header-contenet{
-    width: 50%;
-    position: relative;
-    top: 16;
-    left: 8%;
-}
+
 /* About Section */
 #about{
     padding: 80px 0;
@@ -127,7 +123,7 @@ nav ul li a:hover::after{
     bottom: -8px;
     transition: 0.3s;
 }
-.tab-links.active-link::after{
+.tab-links.active-link:after{
     width: 50%;
 }
 .tab-content ul li{
@@ -239,7 +235,7 @@ nav ul li a:hover::after{
     /* text-align: center; */
 }
 .work:hover img{
-    transform: scale(1.1);
+    transform: rotateY(10);
 }
 .work:hover .layer{
     height: 100%;
@@ -392,6 +388,7 @@ footer{
     }
     .copyright{
         font-size: 14px;
+        width: 100vw;
     }
 
 }
@@ -399,4 +396,7 @@ footer{
      color: #61b752;
      margin-top: -40px;
      display: block;
+}
+#img.ecommerce{
+    height: 100%;
 }
