@@ -3,45 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Olumuyiwa Emmanuel Olu | Software Developer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/331934aac0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <span class="loader"></span>
+    </div>
+
     <div id="header">
         <div class="container">
             <nav>
                 <div class="logo">
-                    <h1>OLU</h1>
+                    <h1><span style="color: #ff004f;">O</span>LU</h1>
                 </div>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">My Services</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
             </nav>
-            <div class="header-text">
-                <p>Web Developer</p>
+            <div class="header-text fade-in">
+                <p>Software Developer</p>
                 <h1>Hi, I'm <span>Olumuyiwa</span></h1>
+                <p>Turning ideas into efficient, scalable applications</p>
+                <a href="#contact" class="btn">Get in Touch</a>
             </div>
         </div>
     </div>
-    <!-- ....about section... -->
+
+    <!-- About Section -->
     <div id="about">
         <div class="container">
             <div class="row">
-                <div class="about-col-1">
-                    <img src="images/Passport.jpg" alt="">
+                <div class="about-col-1 fade-in overlay">
+                    <img src="images/muyiwa.jpg" alt="Olumuyiwa Olu">
                 </div>
-                <div class="about-col-2">
+                <div class="about-col-2 fade-in" style="transition-delay: 0.2s">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hey! I’m Olumuyiwa and I’m a developer. I love working on the web
-                        and making sure it continues to be a place for everyone and our creative, 
-                        personal, and weird passions. 
+                    <p>I'm Olumuyiwa Emmanuel Olu, a Software Developer specializing in Python and JavaScript. With a solid background in IT, 
+                        I build efficient, scalable, and user-focused applications from concept to deployment. I thrive on solving complex 
+                        problems and am passionate about turning innovative ideas into impactful solutions. Let's connect and build something great.
                     </p>
 
                     <div class="tab-titles">
@@ -51,23 +60,24 @@
                     </div>
                     <div class="tab-content active-tab" id="skills">
                         <ul>
-                            <li>HTML, CSS</li>
-                            <li>JavaScript</li>
-                            <li>React.js</li>
-                            <li>Node.js, Express.js</li>
-                            <li>MongoDB</li>
+                            <li><span>Frontend:</span> HTML, CSS, JavaScript, React.js, Bootstrap</li>
+                            <li><span>Backend:</span> Python, Flask, PHP</li>
+                            <li><span>Database:</span> SQL, MongoDB</li>
+                            <li><span>Tools:</span> Git, Docker, AWS</li>
                         </ul>
                     </div>
                     <div class="tab-content" id="experience">
                         <ul>
-                            <li><span>Jan 2020-Date</span><br>Program Analyst at INEC</li>
+                            <li><span>Jan 2020 - Present</span><br>Program Analyst at INEC</li>
                             <li><span>Jan 2017 - Dec 2019</span><br>Administrative Assistant at INEC</li>
+                            <li><span>Jun 2015 - Dec 2016</span><br>IT Support Specialist at TechSolutions</li>
                         </ul>
                     </div>
                     <div class="tab-content" id="education">
                         <ul>
-                            <li><span>Mar 2024</span><br>Full-stack JavaScript Bootcamp Certificate</li>
-                            <li><span>Mar 2019</span><br>BSc. (Hons) Information Technology</li>
+                            <li><span>2024</span><br>Full-stack JavaScript Bootcamp Certificate</li>
+                            <li><span>2019</span><br>BSc. (Hons) Information Technology</li>
+                            <li><span>2014</span><br>Diploma in Computer Science</li>
                         </ul>
                     </div>
                 </div>
@@ -75,100 +85,108 @@
         </div>
     </div>
 
-    <!-- .....services....... -->
+    <!-- Services Section -->
     <div id="services">
-        <div class="container">
+        <div class="container fade-in">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Graphics & Animation</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. odio velit. Ut, veniam quia quis amet magnam quas minima, quasi velit dolores ab soluta est molestiae cupiditate.</p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. odio velit. Ut, veniam quia quis amet magnam quas minima, quasi velit dolores ab soluta est molestiae cupiditate.</p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-globe"></i>
+                    <i class="fas fa-code"></i>
                     <h2>Web Development</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.repellat cupiditate odio velit. Ut, veniam quia quis amet magnam quas minima, quasi velit dolores ab soluta est molestiae cupiditate.</p>
-                    <!-- <a href="#">Learn more</a> -->
-
+                    <p>Custom web applications built with modern technologies like React, Node.js, and Python. Responsive designs that work across all devices.</p>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>User-centered design that focuses on creating intuitive and engaging user experiences with clean, modern interfaces.</p>
+                </div>
+                <div>
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>App Development</h2>
+                    <p>Cross-platform mobile applications developed with React Native for both iOS and Android platforms.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ------Portfolio------->
+    <!-- Portfolio Section -->
     <div id="portfolio">
-        <div class="container">
+        <div class="container fade-in">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="assets/payment_app.jpg" alt="">
+                    <img src="images/business-team.jpg" alt="Employee Management App">
                     <div class="layer">
-                        <h3>Payment App</h3>
-                        <p> Design of a user friendly App to make online payments with ease.
-                        </p>
-                        <a href="assets/paymentApp_vid.mp4" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                        <h3>Employee Management App</h3>
+                        <p>A web application designed to streamline HR and administrative tasks. Key features include employee database, leave management, and promotion tracking.</p>
+                        <a href="https://devstudio.pythonanywhere.com/staff-portal/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/business-team-working-laptop.jpg" alt="">
+                    <img src="assets/bday.png" alt="E-Commerce App">
                     <div class="layer">
-                        <h3>React Router Project</h3>
-                        <p>App to connect you with your loved ones and great talents around the world.
-                        </p>
-                        <a href="https://space-psi-gray.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                        <h3>Birthday App</h3>
+                        <p>A fun, web-based app for planning birthday parties 🥳. Built with Flask and MySQL, it makes managing guests, 
+                            menus, and invitations simple and stress-free.”.</p>
+                        <a href="https://olu2410.pythonanywhere.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                <div class="work">
-                    <img id="img.ecommerce" src="assets/ecommerce-website-builder.jpg" alt="">
+                <!-- <div class="work">
+                    <img src="assets/ecommerce-website-builder.jpg" alt="E-Commerce App">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
-                        <p>E-Commercer App built on MERN-stack.
-                        </p>
-                        <a href="https://project-ecommerce-indol.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                        <p>E-Commerce platform built with MERN stack featuring product catalog, shopping cart, and secure payment processing.</p>
+                        <a href="https://project-ecommerce-indol.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div> -->
+                <div class="work">
+                    <img src="assets/payment_app.jpg" alt="Payment App">
+                    <div class="layer">
+                        <h3>Payment App</h3>
+                        <p>User-friendly mobile application for making online payments with secure authentication.</p>
+                        <a href="assets/paymentApp_vid.mp4" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
-            <!-- <a href="#" class="btn">See more</a> -->
+            <a href="#" class="btn">View More</a>
         </div>
     </div>
 
-    <!-- ----Contact---- -->
+    <!-- Contact Section -->
     <div class="contact" id="contact">
         <div class="container">
             <div class="row">
-                <div class="contact-left">
+                <div class="contact-left fade-in">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-regular fa-paper-plane"></i>olumuyiwa69@yahoo.com</p>
-                    <p><i class="fa-solid fa-phone"></i> +23481069676097</p>
+                    <p><i class="fas fa-paper-plane"></i>olumuyiwa69@yahoo.com</p>
+                    <p><i class="fas fa-phone"></i> +234 810 6967 6097</p>
                     <div class="social-icons">
-                        <a href="www.linkedin.com/in/olumuyiwa-olu"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/olumuyiwa-olu" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/olu2410" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/olex2410" target="_blank"><i class="fab fa-twitter"></i></a>
                     </div>
-                    <a href="https://docs.google.com/document/d/1PiWlXfxEzJhBxt2de6OlmtSSAhyEOhLE/edit?usp=sharing&ouid=108441024400428229929&rtpof=true&sd=true" class="btn btn2">RESUME</a>
+                    <a href="https://docs.google.com/document/d/1PiWlXfxEzJhBxt2de6OlmtSSAhyEOhLE/edit" 
+                       target="_blank" class="btn btn2">Resume</a>
                 </div>
-                <div class="contact-right">
+                <div class="contact-right fade-in" style="transition-delay: 0.2s">
                     <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Enter your name" required>
-                        <input type="email" name="email" placeholder="Enter your email" required>
-                        <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
-                        <input type="submit" class="btn btn2" value="Send">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
                     </form>
                     <span id="msg"></span>
                 </div>
             </div>
         </div>
         <div class="copyright">
-            <p>&#169 2024</p>
+            <p>&copy; 2024 Olumuyiwa Emmanuel Olu. All rights reserved.</p>
         </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
     </div>
 
     <script src="app.js"></script>

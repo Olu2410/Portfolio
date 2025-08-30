@@ -51,7 +51,7 @@
 // closing body tag. Replace the 'SCRIPT URL' with the web app url
     //  NB: REMEMBER TO GIVE YOUR <form name='submit-to-google-sheet'>
 
- <script>
+ <!-- <script>
   const scriptURL = '<SCRIPT URL>'
   const form = document.forms['submit-to-google-sheet']
   form.addEventListener('submit', e => {
@@ -60,4 +60,4 @@
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
-</script> 
+</script>  -->
